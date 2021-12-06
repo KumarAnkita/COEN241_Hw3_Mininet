@@ -110,7 +110,7 @@ class Tutorial (object):
       return
 
     packet_in = event.ofp # The actual ofp_packet_in message.
-
+    print("Swtich:", event.connection,"source address :", packet.src,"destination address:", packet.dst)
     # Comment out the following line and uncomment the one after
     # when starting the exercise.
    # self.act_like_hub(packet, packet_in)
